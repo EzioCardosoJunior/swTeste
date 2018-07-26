@@ -7,9 +7,6 @@
  * Controller of the swsApp
  */
 angular.module('swsApp')
-  .controller('MainCtrl', function($scope,$position) {
-      
-      
-      
-      
-  });
+  .controller('cadastrosGeraisCtrl', function($scope) {
+    
+});

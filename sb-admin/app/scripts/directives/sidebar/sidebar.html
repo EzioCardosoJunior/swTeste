@@ -4,7 +4,7 @@
         <ul class="nav in" id="side-menu">
             <!--<sidebar-search ></sidebar-search>-->
             <li ui-sref-active="">
-                <a ui-sref="dashboard.home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                <a ui-sref="dashboard.home"><i class="fa fa-home fa-fw"></i> Início</a>
             </li>
             <li ui-sref-active="active">
 
@@ -74,20 +74,21 @@
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
+            
             <li ng-class="{active:collapseVar==4}">
-                <a href="" ng-click="check(4)"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span
+                <a href="" ng-click="check(4)"><i class="fa fa-question-circle fa-fw"></i> Sobre o sistema<span
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level" collapse="collapseVar!=4">
                     <li ng-class="{active: selectedMenu=='blank'}">
-                        <a ui-sref="dashboard.blank" ng-click="selectedMenu='blank'">Blank Page</a>
+                        <a ui-sref="dashboard.blank" ng-click="selectedMenu='blank'">Versão</a>
                     </li>
                     <li>
-                        <a ui-sref="login">Login Page</a>
+                        <a ui-sref="login">Trocar usuário</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
-            <li><a href="http://www.strapui.com/">Premium Angular Themes</a></li>
+            
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

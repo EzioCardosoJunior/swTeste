@@ -36,7 +36,8 @@ angular
                     'scripts/directives/header/header.js',
                     'scripts/directives/header/header-notification/header-notification.js',
                     'scripts/directives/sidebar/sidebar.js',
-                    'scripts/directives/sidebar/sidebar-search/sidebar-search.js'
+                    'scripts/directives/sidebar/sidebar-search/sidebar-search.js',                    
+                    'scripts/directives/header/icones-topo/icones-topo.js'
                     ]
                 }),
                 $ocLazyLoad.load(
@@ -96,6 +97,10 @@ angular
       .state('dashboard.form',{
         templateUrl:'views/form.html',
         url:'/form'
+    })
+      .state('dashboard.cadastrosGerais',{
+        templateUrl:'views/cadastrosGerais.html',
+        url:'/cadastrosGerais'
     })
       .state('dashboard.blank',{
         templateUrl:'views/pages/blank.html',
