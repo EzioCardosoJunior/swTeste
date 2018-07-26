@@ -7,9 +7,7 @@
  * Controller of the swsApp
  */
 angular.module('swsApp')
-  .controller('MainCtrl', function($scope,$position) {
-      
-      
-      
-      
+  .controller('MainCtrl', function($scope, $position, $rootScope) {
+    
+      $rootScope.name = 'anonymous'; 
   });

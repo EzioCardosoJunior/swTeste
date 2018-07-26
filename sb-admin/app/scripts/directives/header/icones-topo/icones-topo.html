@@ -1,151 +1,17 @@
-
-<ul class="nav navbar-nav navbar-top-links navbar-default navbar-right" style="margin-top: 4%;">
-    <!--COMPRAS-->
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-folder "></i> 
-        </a>
-        <ul class="dropdown-menu dropdown-messages">
-            <li>
-                <a href="#">
-                    <div>
-                        <strong>Função ou link</strong>
-                        <span class="pull-right text-muted">
-                            <em>Ajuda</em>
-                        </span>
-                    </div>
-                    <div>SubMenu</div>
-                </a>
-            </li>
-
-
-        </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-    <!--COMPRAS-->
-
-
-    <!--CONTABILIDADE-->
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-print "></i> 
-        </a>
-        <ul class="dropdown-menu dropdown-messages">
-            <li>
-                <a href="#">
-                    <div>
-                        <strong>Função ou link</strong>
-                        <span class="pull-right text-muted">
-                            <em>Ajuda</em>
-                        </span>
-                    </div>
-                    <div>SubMenu</div>
-                </a>
-            </li>
-
-
-        </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-    <!--CONTABILIDADE-->
-
-
-    <!--CUSTOS-->
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-star "></i> 
-        </a>
-        <ul class="dropdown-menu dropdown-messages">
-            <li>
-                <a href="#">
-                    <div>
-                        <strong>Função ou link</strong>
-                        <span class="pull-right text-muted">
-                            <em>Ajuda</em>
-                        </span>
-                    </div>
-                    <div>SubMenu</div>
-                </a>
-            </li>
-
-
-        </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-    <!--CUSTOS-->
-
-
-    <!--ESTOQUE-->
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-clock-o "></i> 
-        </a>
-        <ul class="dropdown-menu dropdown-messages">
-            <li>
-                <a href="#">
-                    <div>
-                        <strong>Função ou link</strong>
-                        <span class="pull-right text-muted">
-                            <em>Ajuda</em>
-                        </span>
-                    </div>
-                    <div>SubMenu</div>
-                </a>
-            </li>
-
-
-        </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-    <!--ESTOQUE-->
-
-    <!--FINANCEIRO-->
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-envelope "></i> 
-        </a>
-        <ul class="dropdown-menu dropdown-messages">
-            <li>
-                <a href="#">
-                    <div>
-                        <strong>Função ou link</strong>
-                        <span class="pull-right text-muted">
-                            <em>Ajuda</em>
-                        </span>
-                    </div>
-                    <div>SubMenu</div>
-                </a>
-            </li>
-
-
-        </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-    <!--FINANCEIRO-->
-
-    <!--FISCAL-->
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-exclamation "></i> 
-        </a>
-        <ul class="dropdown-menu dropdown-messages">
-            <li>
-                <a href="#">
-                    <div>
-                        <strong>Função ou link</strong>
-                        <span class="pull-right text-muted">
-                            <em>Ajuda</em>
-                        </span>
-                    </div>
-                    <div>SubMenu</div>
-                </a>
-            </li>
-
-
-        </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-    <!--FISCAL-->
-
-</ul>
-
+<div class="row" ng-controller="iconesTopoCtrl">
+        <div class="col-lg-8">
+            <h1 class="page-header">{{$rootScope.name}}</h1>
+        </div>
+        <div class="col-lg-4">
+            <div class="page-header">
+                <label for="empresasSelect">Trocar empresa</label>
+                <select id="empresasSelect" class="form-control">
+                    <option>0001 - Empresa SystemWork LTDA</option>
+                    <option>0002 - Empresa Exemplo</option>
+                    <option>0003 - Empresa Modelo</option>
+                    <option>0003 - Empresa Com bastante caracteres</option>
+                </select>
+            </div>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>

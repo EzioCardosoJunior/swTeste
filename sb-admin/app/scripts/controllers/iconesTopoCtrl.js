@@ -1,0 +1,17 @@
+'use strict';
+/**
+ * @ngdoc function
+ * @name swsApp.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of the swsApp
+ */
+angular.module('swsApp')  
+    
+      .controller('iconesTopoCtrl', function ($scope) {
+          
+                  alert ("iai");
+               $scope.titulo = sessionStorage.GetItem("titulo");
+       
+            });
+  
