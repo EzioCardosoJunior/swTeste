@@ -7,7 +7,10 @@
  * Controller of the swsApp
  */
 angular.module('swsApp')
-  .controller('MainCtrl', function($scope, $position) {
+  .controller('gestaoComprasCtrl', function($scope, $rootScope) {
     
-      
-  });
+    
+    sessionStorage.setItem("titulo", "Gestão de Compras");
+    
+  
+});

@@ -7,7 +7,9 @@
  * Controller of the swsApp
  */
 angular.module('swsApp')
-  .controller('MainCtrl', function($scope, $position) {
+  .controller('agendaCtrl', function($scope) {
     
-      
-  });
+    
+    sessionStorage.setItem("titulo", "Agenda");
+   
+});

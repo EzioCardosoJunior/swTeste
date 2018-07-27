@@ -12,9 +12,20 @@ angular.module('swsApp')
                 templateUrl: 'scripts/directives/header/icones-topo/icones-topo.html',
                 restrict: 'E',
                 replace: true,
+
+                scope: {
+                },
                 
+                controller: function ($scope) {
+                    $scope.titulo = sessionStorage.getItem('titulo');
+                    alert($scope.titulo);
+
+                }
+
             }
-            
+
         });
+
+
 
 

@@ -22,7 +22,7 @@ angular
                 });
 
                 $urlRouterProvider.otherwise('/login');
-                
+
                 $stateProvider
                         .state('dashboard', {
                             url: '/dashboard',
@@ -84,7 +84,7 @@ angular
                                     return $ocLazyLoad.load({
                                         name: 'swsApp',
                                         files: [
-                                            'scripts/controllers/main.js',                                           
+                                            'scripts/controllers/main.js',
                                             'scripts/directives/timeline/timeline.js',
                                             'scripts/directives/notifications/notifications.js',
                                             'scripts/directives/chat/chat.js',
@@ -94,25 +94,23 @@ angular
                                 }
                             }
                         })
-                        
-                   
-                        
-                        
+
                         .state('dashboard.form', {
                             templateUrl: 'views/form.html',
                             url: '/form'
-                        })
+                        })                        
+                        
                         .state('dashboard.cadastrosGerais', {
                             templateUrl: 'views/cadastrosGerais.html',
                             url: '/cadastrosGerais',
                             controller: 'cadastrosGeraisCtrl',
-                              
+
                         })
                         .state('dashboard.iconesTopo', {
                             templateUrl: 'scripts/directives/iconesTopo.html',
                             url: '/iconesTopo',
                             controller: 'iconesTopoCtrl',
-                              
+
                         })
                         .state('dashboard.blank', {
                             templateUrl: 'views/pages/blank.html',
@@ -122,6 +120,163 @@ angular
                             templateUrl: 'views/pages/login.html',
                             url: '/login'
                         })
+                        
+                        .state('dashboard.agenda', {
+                            templateUrl: 'views/agenda.html',
+                            url: '/agenda',
+                            controller: 'agendaCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/agendaCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.areaRepresentante', {
+                            templateUrl: 'views/areaRepresentante.html',
+                            url: '/areaRepresentante',
+                            controller: 'areaRepresentanteCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/areaRepresentanteCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.gestaoCompras', {
+                            templateUrl: 'views/gestaoCompras.html',
+                            url: '/gestaoCompras',
+                            controller: 'gestaoComprasCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/gestaoComprasCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.contabilidade', {
+                            templateUrl: 'views/contabilidade.html',
+                            url: '/contabilidade',
+                            controller: 'contabilidadeCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/contabilidadeCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.documentacao', {
+                            templateUrl: 'views/documentacao.html',
+                            url: '/documentacao',
+                            controller: 'documentacaoCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/documentacaoCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.exportacaoDados', {
+                            templateUrl: 'views/exportacao.html',
+                            url: '/exportacao',
+                            controller: 'exportacaoCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/exportacaoCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.importacaoDados', {
+                            templateUrl: 'views/importacaoDados.html',
+                            url: '/importacaoDados',
+                            controller: 'importacaoDadosCtrl',
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/importacaoDadosCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.administracao', {
+                            templateUrl: 'views/administracao.html',
+                            url: 'views/administracao.html',
+                            controller: 'administracaoCtrl',                        
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/administracaoCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.pcp', {
+                            templateUrl: 'views/pcp.html',
+                            url: 'views/pcp.html',
+                            controller: 'pcpCtrl',                        
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/pcpCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        .state('dashboard.sistema', {
+                            templateUrl: 'views/sistema.html',
+                            url: 'views/sistema.html',
+                            controller: 'sistemaCtrl',                        
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/sistemaCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        
+                        .state('dashboard.vendaBalcao', {
+                            templateUrl: 'views/vendaBalcao.html',
+                            url: 'views/vendaBalcao.html',
+                            controller: 'vendaBalcaoCtrl',                        
+                            resolve: {
+                                loadMyFile: function ($ocLazyLoad) {
+                                    return $ocLazyLoad.load({
+                                                name: 'swsApp',
+                                                files: ['scripts/controllers/vendaBalcaoCtrl.js'],
+
+                                            })
+                                }
+                            }
+                        })
+                        
                         .state('dashboard.chart', {
                             templateUrl: 'views/chart.html',
                             url: '/chart',
@@ -138,7 +293,7 @@ angular
                                             $ocLazyLoad.load({
                                                 name: 'swsApp',
                                                 files: ['scripts/controllers/chartContoller.js'],
-                                                
+
                                             })
                                 }
                             }

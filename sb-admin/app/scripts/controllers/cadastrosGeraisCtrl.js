@@ -7,12 +7,10 @@
  * Controller of the swsApp
  */
 angular.module('swsApp')
-  .controller('cadastrosGeraisCtrl', function($scope, $rootScope) {
+  .controller('cadastrosGeraisCtrl', function($scope) {
     
     
     sessionStorage.setItem("titulo", "Cadastros Gerais");
     alert ("oba");
   
-    $scope.titulo = $rootScope.name;
-    
 });
