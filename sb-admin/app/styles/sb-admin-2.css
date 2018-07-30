@@ -405,3 +405,22 @@ table.dataTable thead .sorting:after {
 }
 
 /*fim drop down topo*/
+
+/*css login*/
+#logoLogin{
+    width:300px;
+    height:70px;
+    position:relative;                
+    left:50%;                
+    margin-left:-150px;
+    /*css login*/
+}
+/*css Side Bar*/
+#logoSideBar{
+    width:250px;
+    height:56px;
+    position:relative;                
+    left:50%;                
+    margin-left:-125px; 
+}
+/*css Side Bar*/

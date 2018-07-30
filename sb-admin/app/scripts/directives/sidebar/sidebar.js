@@ -35,6 +35,14 @@ angular.module('swsApp')
           else
             $scope.multiCollapseVar = y;
         };
+        
+        $scope.menuPadrao = "Menu de Teste";
+        $scope.menuPadraoCaminho = "chart";
+        
+        
+        
+        
+        
       }
     }
   }]);
